@@ -1,0 +1,30 @@
+﻿@model double
+
+@{
+    ViewBag.Title = "PowerConversion";
+}
+<div style="background-color: #08415C">
+    <p>/</p>
+    <h1>Power Converter</h1>
+    <h3 style="text-align: center">Grant Parfrey</h3>
+    <p>/</p>
+</div>
+<div>
+    <h2 style="text-align: center">1 Donkey Power to 250 Watts</h2>
+</div>
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8" style="text-align: center">
+        <form action="ConvertPower" method="post">
+            <p>Enter Donkey Power: <input style="background-color: white" name="inputPower" type="number" step="any" placeholder="Donkey Power" /></p>
+            <input class="btn btn-convert" name="submit" type="submit" />
+        </form>
+        <p>
+            Power in Watts: @Model
+        </p>
+    </div>
+</div>
+<div>
+    <a href="index" class="btn btn-nav">Back</a>
+</div>
