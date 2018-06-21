@@ -1,16 +1,31 @@
-﻿@model string
-@{
+﻿@{ 
     ViewBag.Title = "Index";
 }
+    <div style="background-color: #08415C">
+        <p>/</p>
+        <h1>Syndicate's Super Science Converter</h1>
+        <h3 style="text-align: center">Sophie Bohr, Matthew Chiang, Kate Martino, Grant Parfrey</h3>
+        <p>/</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
 
-<h2>Index</h2>
-<div>
-    <h1>Sup</h1>
-    <form action="SayHello" method="post">
-        <input name="inputString" />
-        <input name="submit" type="submit" />
-    </form>
-    <p>
-        @Model
-    </p>
-</div>
+        </div>
+        <div class="col-md-4">
+            <p style="text-align: center">
+                Welcome to the best converter page found on the whole wide web! In Sophie’s Syndicate,
+                we believe in producing only the best material/content for our dedicated fan base. Enjoy this first website!
+            </p>
+        </div>
+    </div>
+    <div class="row" style="text-align: center">
+        <div class="col-md-3">
+            <a href="AgeConversions" class="btn btn-nav">Age Converter</a>
+        </div>
+        <div class="col-md-3">
+            <a href="TimeConversions" class="btn btn-nav">Time Converter</a>
+        </div>
+        <div class="col-md-3">
+            <a href="PowerConversions" class="btn btn-nav">Power Converter</a>
+        </div>
+    </div>
