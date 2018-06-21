@@ -1,0 +1,32 @@
+﻿@model double
+
+@{
+    ViewBag.Title = "TimeConversions";
+}
+<div style="background-color: #08415C">
+    <p>/</p>
+    <h1>Time Converter</h1>
+    <h3 style="text-align: center">Sophie Bohr</h3>
+    <p>/</p>
+</div>
+<div>
+    <h2 style="text-align: center">1 Shake to 10 Nanoseconds</h2>
+</div>
+<div class="row">
+
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8" style="text-align: center">
+        <form action="ConvertTime" method="post">
+            <p>Enter number of shakes: <input style="background-color: white" name="inputShakes" type="number" step="any" placeholder="Shakes" /></p>
+            <input class="btn btn-convert" name="submit" type="submit" />
+        </form>
+        <p>
+            Number of shakes in Nanoseconds is: @Model
+        </p>
+    </div>
+</div>
+<div>
+    <a href="index" class="btn btn-nav">Back</a>
+</div>

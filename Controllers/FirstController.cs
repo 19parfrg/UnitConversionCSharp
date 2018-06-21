@@ -15,5 +15,24 @@ namespace UnitConversionCSharp.Controllers
         {
             return View();
         }
+        public ActionResult AgeConversion()
+        {
+            return View( viewName: "AgeConversion", model: 0.0);
+        }
+        public ActionResult TimeConversions()
+        {
+            return View(viewName: "TimeConversions", model: 0.0);
+        }
+
+        [HttpPost]
+        public ActionResult convertAge(double inputAge)
+        {
+            return View(viewName: "AgeConversion", model:inputAge*7);
+        }
+        [HttpPost]
+        public ActionResult ConvertTime(double inputShakes)
+        {
+            return View(viewName: "TimeConversions", model: inputShakes * 10);
+        }
     }
 }
