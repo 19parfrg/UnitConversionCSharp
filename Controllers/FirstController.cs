@@ -34,5 +34,15 @@ namespace UnitConversionCSharp.Controllers
         {
             return View(viewName: "TimeConversions", model: inputShakes * 10);
         }
+
+        public ActionResult PowerConversion()
+        {
+            return View(viewName: "PowerConversion", model: 0.0);
+        }
+        [HttpPost]
+        public ActionResult convertPower(double inputPower)
+        {
+            return View(viewName: "PowerConversion", model: inputPower * 250);
+        }
     }
 }
