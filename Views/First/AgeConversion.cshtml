@@ -1,5 +1,42 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model double
+
 @{
+    ViewBag.Title = "AgeConversion";
 }
+
+<head>
+    <meta charset="utf-8" />
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div style="background-color: #08415C">
+        <p>/</p>
+        <h1>Age Converter</h1>
+        <h3 style="text-align: center">Matthew</h3>
+        <p>/</p>
+    </div>
+    <div>
+        <h2 style="text-align: center">1 year to 7 dog years</h2>
+    </div>
+    <div class="row">
+
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8" style="text-align: center">
+            <form action="ConvertAge" method="post">
+                <p>Enter your age: <input name="inputAge" type="number" step="any" placeholder="Age" /></p>
+                <input name="submit" type="submit" />
+            </form>
+            <p>
+                Your age in dog years is: @Model
+            </p>
+        </div>
+    </div>
+    <div>
+        <a href="index.html" class="btn btn-nav">Back</a>
+    </div>
+
+</body>
